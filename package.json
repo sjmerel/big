@@ -1,0 +1,39 @@
+{
+  "name": "big",
+  "author": "Steve Merel",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "big",
+    "uuid": "8bb0ba21-7c62-4f55-94d1-8a843bd8177f",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "characterRegex": "[0-9]",
+          "name": "FONT_FUTURA_62",
+          "file": "fonts/FuturaBold.ttf"
+        },
+
+        {
+          "type": "font",
+          "characterRegex": "[ +%a-zA-Z0-9]",
+          "name": "FONT_FUTURA_20",
+          "file": "fonts/Futura-Medium.ttf"
+        }
+      ]
+    }
+  }
+}
