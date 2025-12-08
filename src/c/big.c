@@ -72,7 +72,7 @@ static void tick_timer_handler(struct tm* tick_time, TimeUnits units_changed) {
 }
 
 static void battery_state_handler(BatteryChargeState charge) {
-    bool show_battery = true; //charge.is_charging || charge.charge_percent <= 30;
+    bool show_battery = charge.is_charging || charge.charge_percent <= 30;
     layer_set_hidden(text_layer_get_layer(g_battery_layer), !show_battery);
     text_layer_set_text(g_battery_layer, battery_str(charge));
 }
@@ -146,7 +146,7 @@ static void init() {
     text_layer_set_background_color(g_date_layer, GColorClear);
     text_layer_set_font(g_date_layer, info_font);
     text_layer_set_text_alignment(g_date_layer, GTextAlignmentLeft);
-    //layer_set_hidden(text_layer_get_layer(g_date_layer), true);
+    layer_set_hidden(text_layer_get_layer(g_date_layer), true);
     layer_add_child(window_layer, text_layer_get_layer(g_date_layer));
 
     // battery charge layer
