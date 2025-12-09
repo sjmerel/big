@@ -1,7 +1,7 @@
 {
   "name": "big",
   "author": "Steve Merel",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": ["pebble-app"],
   "private": true,
   "dependencies": {},
@@ -10,8 +10,7 @@
     "uuid": "8bb0ba21-7c62-4f55-94d1-8a843bd8177f",
     "sdkVersion": "3",
     "enableMultiJS": true,
-    "targetPlatforms": [
-    ],
+    "targetPlatforms": ["aplite", "basalt", "chalk", "diorite", "emery", "flint"],
     "watchapp": {
       "watchface": true
     },
