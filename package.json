@@ -28,9 +28,9 @@
 
         {
           "type": "font",
-          "characterRegex": "[ +%a-zA-Z0-9]",
-          "name": "FONT_FUTURA_20",
-          "file": "fonts/Futura-Medium.ttf"
+          "characterRegex": "[ %a-zA-Z0-9]",
+          "name": "FONT_FUTURA_24",
+          "file": "fonts/Futura-CondensedExtraBold.ttf"
         }
       ]
     }
